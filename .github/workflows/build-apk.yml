@@ -19,9 +19,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Web Assets (TypeScript/Vite)
-        run: |
-          npm run build --if-present
+      - name: Build Web Assets
+        run: npm run build --if-present
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
